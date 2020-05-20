@@ -11,7 +11,8 @@ npm install -S @feizheng/next-npm-version
 import '@feizheng/next-npm-version';
 
 nx.npmVersion('@feizheng/next-js-core2');
-// 2.4.4
+// '2.4.4'
 
-
+nx.npmVersion('@feizheng/next-js-core2xxx');
+// null
 ```
