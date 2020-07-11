@@ -1,14 +1,13 @@
 (function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
-  var npmInstalled = require('@feizheng/next-npm-installed');
   var execSync = require('child_process').execSync;
 
   nx.npmVersion = function (inName) {
-    if (npmInstalled(inName)) {
-      var buf = execSync('npm view ' + inName + ' version')
+    try {
+      var buf = execSync('npm show ' + inName + ' version');
       return buf.toString().trim();
-    }
+    } catch (e) { }
     return null;
   };
 
