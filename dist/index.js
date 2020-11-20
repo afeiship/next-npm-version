@@ -3,7 +3,7 @@
  * description: Get npm package version.
  * homepage: https://github.com/afeiship/next-npm-version
  * version: 1.0.0
- * date: 2020-11-20 18:36:21
+ * date: 2020-11-20 18:40:15
  * license: MIT
  */
 
