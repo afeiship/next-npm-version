@@ -13,12 +13,12 @@ npm install -S @jswork/next-npm-version
 
 ## usage
 ```js
-import '@feizheng/next-npm-version';
+import '@jswork/next-npm-version';
 
-nx.npmVersion('@feizheng/next-js-core2');
+nx.npmVersion('@jswork/next-js-core2');
 // '2.6.0'
 
-nx.npmVersion('@feizheng/next-js-core2xxx');
+nx.npmVersion('@jswork/next-js-core2xxx');
 // null
 ```
 
