@@ -1,10 +1,9 @@
-const nx = require('@feizheng/next-js-core2');
-require('../src/next-npm-version');
+(function () {
+  require('../src');
 
-describe('api.basic test', () => {
   describe('api.basic test', () => {
     test.only('pageckage exist should return semver.', function () {
-      var ver = nx.npmVersion('@feizheng/next-js-core2');
+      var ver = nx.npmVersion('@jswork/next');
       console.log(ver, typeof ver);
       expect(ver.includes('.')).toBe(true);
     });
@@ -15,8 +14,9 @@ describe('api.basic test', () => {
     });
 
     test('pageckage not exist should return null.', function () {
-      var ver = nx.npmVersion('@feizheng/next-js-core111');
+      var ver = nx.npmVersion('@jswork/next-js-core2');
       expect(ver).toBe(null);
     });
   });
-});
+
+})();
