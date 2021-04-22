@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-npm-version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get npm package version.",
   "homepage": "https://github.com/afeiship/next-npm-version",
   "author": {
@@ -39,5 +39,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "npm",
+    "version"
+  ]
 }
